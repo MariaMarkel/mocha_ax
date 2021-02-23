@@ -24,29 +24,29 @@ const axios = require ('axios');
 //     });
 // });
 
-function avg (n) {
-    let sum = 0;
-    for (let i = 1; i <=n; i++) {
-       sum += i;
-    }
-    return sum/n;
-}
-function avg2 (arr) {
-    let sum = 0;
-    for (let el of arr) {
-        if (typeof el !== 'number') continue;
-        else sum += el;
-    }
-    return sum/arr.length;
-}
-function avg3 (str) {
-    let sum = 0;
-    let arr = str.split(' ');
-    for (let el of arr) {
-        sum += el.length;
-    }
-    return sum/arr.length;
-}
+// function avg (n) {
+//     let sum = 0;
+//     for (let i = 1; i <=n; i++) {
+//        sum += i;
+//     }
+//     return sum/n;
+// }
+// function avg2 (arr) {
+//     let sum = 0;
+//     for (let el of arr) {
+//         if (typeof el !== 'number') continue;
+//         else sum += el;
+//     }
+//     return sum/arr.length;
+// }
+// function avg3 (str) {
+//     let sum = 0;
+//     let arr = str.split(' ');
+//     for (let el of arr) {
+//         sum += el.length;
+//     }
+//     return sum/arr.length;
+// }
 // function countKeys (obj) {
 //     let count = 0;
 //     for (k in obj) {
@@ -54,15 +54,16 @@ function avg3 (str) {
 //     }
 //     return count;
 // }
-const countKeys = function (obj) {
-    if (typeof obj !== 'object' || obj === null) {
-        return 0;
-    }
-    const keys = Object.keys(obj);
-    let sum = keys.length;
-    keys.forEach(key => sum += countKeys(obj[key]));
-    return sum;
-}
+
+// const countKeys = function (obj) {
+//     if (typeof obj !== 'object' || obj === null) {
+//         return 0;
+//     }
+//     const keys = Object.keys(obj);
+//     let sum = keys.length;
+//     keys.forEach(key => sum += countKeys(obj[key]));
+//     return sum;
+// }
 
 // describe ('Homework', function(){
 //     it ('avg(1, 2, 3, 4, 5)', function() {
@@ -101,6 +102,7 @@ const countKeys = function (obj) {
 //             expect(res.data).to.be.an('array')
 //         })
 // });
+
 let getCardId;
 
 it ('Should Create Cards', function (){

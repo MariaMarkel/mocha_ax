@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2cf8be0-dfc5-4419-abd0-3f894e82b1a7" name="Default Changelist" comment="" />
+    <list default="true" id="a2cf8be0-dfc5-4419-abd0-3f894e82b1a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +36,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.31" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -112,6 +117,7 @@
       <workItem from="1614106995222" duration="1584000" />
       <workItem from="1614108666002" duration="339000" />
       <workItem from="1614109043758" duration="5000" />
+      <workItem from="1614109851272" duration="667000" />
     </task>
     <servers />
   </component>
