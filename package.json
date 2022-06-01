@@ -1,5 +1,5 @@
 {
-  "name": "mocha",
+  "name": "mocha and axios",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.27.2",
     "chai": "^4.2.0",
     "supertest": "^6.0.1"
   },
@@ -15,8 +15,9 @@
     "mocha": "^8.2.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "petstore": "npx mocha test/petstoreCrud.spec.js"
   },
-  "author": "",
+  "author": "mmarkel",
   "license": "ISC"
 }

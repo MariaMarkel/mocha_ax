@@ -105,7 +105,7 @@ const axios = require ('axios');
 
 let getCardId;
 
-it ('Should Create Cards', function (){
+it.skip ('Should Create Cards', function (){
     return axios({
         method: 'POST',
         url: 'https://nazarov-kanban-server.herokuapp.com/card',
@@ -122,7 +122,7 @@ it ('Should Create Cards', function (){
             expect(res.data).eq('Card created')
         })
 });
-it ('Should get Card List', function (){
+it.skip ('Should get Card List', function (){
     return axios({
         method: 'GET',
         url: 'https://nazarov-kanban-server.herokuapp.com/card',
@@ -134,7 +134,7 @@ it ('Should get Card List', function (){
             getCardId = res.data[0]._id;
         })
 });
-it ('Should delete Card', function (){
+it.skip ('Should delete Card', function (){
     return axios({
         method: 'DELETE',
         url: `https://nazarov-kanban-server.herokuapp.com/card/${getCardId}`,
@@ -144,7 +144,7 @@ it ('Should delete Card', function (){
             expect(res.data).eq('Card deleted')
         })
 });
-it('should verify deleted card', async () => {
+it.skip('should verify deleted card', async () => {
     const result = await axios({
         method: 'GET',
         url: `https://nazarov-kanban-server.herokuapp.com/card/${getCardId}`,
